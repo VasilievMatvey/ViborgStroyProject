@@ -34,7 +34,21 @@
   width: 200px;
   padding-left: 20px;
 }
-
 .logo_footer {
   width: 145px;
+}
+@media (max-width: 420px) {
+  .logo {
+    width: 148px;
+    padding-left: 0px;
+  }
+  .logo_footer {
+    width: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .f_icons {
+    width: 110px;
+  }
 }

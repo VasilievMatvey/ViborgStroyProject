@@ -19,7 +19,7 @@
   width: 20px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .menu_list {
     display: none;
   }
@@ -45,4 +45,20 @@
 
 .logo_footer {
   width: 140px;
+}
+
+@media (max-width: 420px) {
+  .logo {
+    width: 148px;
+    padding-left: 0px;
+  }
+  .logo_footer {
+    width: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .f_icons {
+    width: 110px;
+  }
 }
