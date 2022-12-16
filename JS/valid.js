@@ -1,4 +1,4 @@
-(() => {
+function myFunc() {
   "use strict";
 
   const forms = document.querySelectorAll(".needs-validation");
@@ -17,4 +17,6 @@
       false
     );
   });
-})();
+}
+
+myFunc();
