@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/serv.css" />
+    <title>ВСП</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid p-3">
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/logo.svg" alt="ВыборгСтройПроект" class="logo"
+        /></a>
+        <p>Вы на сайте: <br /><span class="time">00.00</span></p>
+        <audio class="audio" src="js/Notif.mp3" style="display: none"></audio>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0 fs-5">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Главная</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="services.html">Наши услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="location.html">Где нас найти</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="feedback.html">Обратная связь</a>
+            </li>
+            <li class="nav-item dropdown">
+              <button
+                class="btn btn-light nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-house"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="registration.html"
+                    >Регистрация</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="authpage.html">Авторизация</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <h2>Наши услуги</h2>
+            <p>
+              Наша компания предоставляет различный спектр услуг, связанных с
+              землёй. Ознакомиться с некоторыми из них, вы можете в этом
+              разделе.
+            </p>
+
+            <div class="bd-toc mt-3 mb-5 my-lg-0 ps-xl-3 mb-lg-5 text-muted">
+              <button
+                class="btn btn-link link-dark p-md-0 mb-2 mb-md-0 text-decoration-none bd-toc-toggle d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                href="#collapseExample"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                На этой странице
+                <img src="img/scroll-icon-8.png" class="scroll_icon" />
+              </button>
+              <div
+                class="bd-toc-collapse collapse d-lg-none"
+                id="collapseExample"
+              >
+                <ul class="list-group list-group-flush">
+                  <a
+                    href="#first-elem"
+                    class="list-group-item list-group-item-action"
+                    >Кадастравые работы</a
+                  >
+                  <a
+                    href="#second-elem"
+                    class="list-group-item list-group-item-action"
+                    >Межевание</a
+                  >
+                  <a
+                    href="#thrid-elem"
+                    class="list-group-item list-group-item-action"
+                    >Строительно-техническая экспертиза</a
+                  >
+                  <a
+                    href="#four-elem"
+                    class="list-group-item list-group-item-action"
+                    >Дизайн интерьеров в Выборге
+                  </a>
+                </ul>
+              </div>
+            </div>
+            <hr />
+            <h2><a name="first-elem"></a>Кадастравые работы</h2>
+            <p>
+              Проведение кадастровых работ необходимо обладателям земельных
+              участков, объектов недвижимости (зданий, строений, сооружений,
+              помещений, объектов незавершенного строительства) для постановки
+              на государственный кадастровый учет в филиале ФГБУ «ФКП
+              Росреестра» по Ленинградской области с целью последующей
+              регистрации прав в Федеральной службе государственной регистрации,
+              кадастра и картографии.
+            </p>
+            <h5>Результатом кадастровых работ являются:</h5>
+            <ol class="list-group-numbered">
+              <li class="list-group-item">
+                <b>Межевой план:</b> при выполнении кадастровых работ, в
+                результате которых обеспечивается подготовка документов для
+                представления в орган кадастрового учета заявления о постановке
+                на учет земельного участка или земельных участков, об учете
+                изменений земельного участка или учете части земельного участка.
+              </li>
+              <li class="list-group-item">
+                <b>Технический план: </b> (при выполнении кадастровых работ, в
+                результате которых обеспечивается подготовка документов для
+                представления в орган кадастрового учета заявления о постановке
+                на учет здания, сооружения, помещения или объекта незавершенного
+                строительства, об учете его изменений или учете его части.
+              </li>
+              <li class="list-group-item">
+                <b>Акт обследования:</b> при выполнении кадастровых работ, в
+                результате которых обеспечивается подготовка документов для
+                представления в орган кадастрового учета заявления о снятии с
+                учета здания, сооружения, помещения или объекта незавершенного
+                строительства.
+              </li>
+            </ol>
+            <hr />
+            <h2><a name="second-elem"></a>Межевание</h2>
+            <p>
+              ООО <b>«ВыборгСтройПроект»</b> выполняет весь спектр работ
+              связанных с межеванием земельных участков, а так же кадастровых и
+              землеустроительных работ на территории Выборга и Выборгского
+              района.
+            </p>
+            <h5>
+              Межевание – наиболее важный процесс в деле оформления земельного
+              участка. Он включает в себя:
+            </h5>
+            <ol class="list-group-numbered">
+              <li class="list-group-item">
+                Топографическую или кадастровую съемку земельного участка на
+                местности;
+              </li>
+              <li class="list-group-item">
+                Камеральную обработку произведенных измерений;
+              </li>
+              <li class="list-group-item">
+                Проектирование границ земельного участка;
+              </li>
+              <li class="list-group-item">
+                Изготовление чертежа и актов согласования границ земельного
+                участка;
+              </li>
+              <li class="list-group-item">
+                Определение границ земельного участка на местности с их
+                согласованием;
+              </li>
+              <li class="list-group-item">
+                Закрепление границ участка с помощью межевых знаков;
+              </li>
+              <li class="list-group-item">
+                Составление межевого плана земельного участка.
+              </li>
+            </ol>
+            <p>
+              В комплексе работ по межеванию земельного участка принимают
+              участие большое количество квалифицированных специалистов. А
+              именно выполнением топографической съемки занимается геодезическая
+              группа в составе геодезиста и помощника геодезиста на высокоточном
+              японском оборудовании «Sokkia».
+            </p>
+            <p>
+              После выполнения полевых работ результаты проведенных измерений
+              попадают в отдел камеральной обработки данных, где
+              специалисты-картографы обрабатывают полученные данные при помощи
+              специализированного программного обеспечения.
+            </p>
+            <hr />
+            <h2><a name="thrid-elem"></a>Строительно-техническая экспертиза</h2>
+            <p>
+              ООО «ВыборгСтройПроект» выполняет полный комплекс услуг по
+              осуществлению строительно-технической экспертизы для физических и
+              юридических лиц на территории Выборга и Выборгского района.
+            </p>
+            <p>
+              Строительно-технические экспертизы проводятся с целью определения
+              качества и стоимости зданий, строений, сооружений, выполненных
+              строительных работ, проведенных подрядчиком при строительстве
+              (реконструкции) объекта недвижимости, определения стоимости
+              невыполненных работ, предусмотренных проектно-сметной
+              документацией, а также определения полноты и качества выполнения
+              строительно-монтажных (отделочных) работ в соответствии со
+              строительными нормами и правилами.
+            </p>
+            <hr />
+            <h2><a name="four-elem"></a>Дизайн интерьеров в Выборге</h2>
+            <p>
+              Любой творческий процесс начинается с идеи. Первый этап
+              подразумевает изучение предпочтений заказчика, его вкуса и стиля
+              жизни. Для удалённой работы необходим технический план квартиры и
+              обмерный план. Связь с заказчиком поддерживается на всем
+              протяжении ведения проекта по Skype, Whatsapp, Viber. Заключается
+              договор на разработку дизайн-проекта. Составляется техническое
+              задание, записываются основные требования и пожелания. Подбираются
+              понравившиеся интерьеры посредством сбора аналогов и на их основе
+              складывается общая концепция будущего проекта.
+            </p>
+            <p>
+              Второй этап подразумевает решение объёмно-пространственных задач
+              посредством эскизного 3D моделирования. Изучаются индивидуальные
+              особенности объекта, его архитектурная составляющая. Предлагается
+              2 варианта планировочного решения с расстановкой мебели в плане.
+              Разрабатывается 3D модель на основе ранее составленного
+              технического задания.
+            </p>
+            <p>
+              Третий этап подразумевает визуализацию проекта посредством
+              профессионального 3D-моделирования. 3D-визуализация интерьера —
+              это создание изображения внутреннего объёма помещения, максимально
+              приближенного к реальности, т.е., это детальная проработка со
+              всеми текстурами, и материалами, подбором мебели и осветительных
+              приборов. Разрабатывается точная художественно-проектная концепция
+              интерьеров с детальной проработкой декоративных материалов, мебели
+              и аксессуаров.
+            </p>
+            <p>
+              Четвертый этап подразумевает разработку полного комплекта чертежей
+              для реализации проекта нормативно-технических документов и планов
+              в соответствии с ГОСТ и СНИП.
+            </p>
+          </div>
+          <div class="col-lg-3 col-12 menu_list">
+            <p>На этой странице:</p>
+            <ul class="list-group list-group-flush">
+              <a
+                href="#first-elem"
+                class="list-group-item list-group-item-action"
+                >Кадастравые работы</a
+              >
+              <a
+                href="#second-elem"
+                class="list-group-item list-group-item-action"
+                >Межевание</a
+              >
+              <a
+                href="#thrid-elem"
+                class="list-group-item list-group-item-action"
+                >Строительно-техническая экспертиза</a
+              >
+              <a
+                href="#four-elem"
+                class="list-group-item list-group-item-action"
+                >Дизайн интерьеров в Выборге
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="container-fluid bg-light p-3">
+        <div class="row">
+          <div class="col-6">
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html"
+                  ><img src="img/logo2.svg" alt="ВСП" class="logo_footer"
+                /></a>
+              </li>
+              <li>Васильев Матвей, 2022</li>
+            </ul>
+          </div>
+          <div
+            class="col-6 d-flex flex-column align-items-center justify-content-center"
+          >
+            <h4 style="margin-bottom: 25px">Наши Соцсети:</h4>
+            <div class="footer-icons">
+              <a href="index.html"
+                ><i class="fa fa-2x fa-house-chimney" aria-hidden="true"></i
+              ></a>
+
+              <a href="https://www.gosuslugi.ru/"
+                ><img
+                  src="img/gosuslugi.png"
+                  alt="ГосУслуги"
+                  style="padding-bottom: 10px"
+                  class="icons"
+              /></a>
+              <a href="#"
+                ><img src="img/vklogo.png" alt="vk" class="icons vk"
+              /></a>
+              <a href="https://mail.google.com"
+                ><i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/timer.js"></script>
+  </body>
+</html>

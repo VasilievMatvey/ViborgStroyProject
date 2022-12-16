@@ -1,0 +1,48 @@
+.navbar {
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+  border-radius: 10px;
+  background: #fbfca7;
+}
+
+.dropdown-menu[data-bs-popper] {
+  left: -141%;
+}
+
+.dropdown-menu.show {
+  max-width: 116px;
+}
+.container {
+  padding-top: 50px;
+}
+
+.scroll_icon {
+  width: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .menu_list {
+    display: none;
+  }
+}
+
+/*footer*/
+.footer-icons a {
+  color: black;
+}
+
+.icons {
+  width: 37px;
+}
+
+.vk {
+  margin-bottom: 15px;
+}
+
+.logo {
+  width: 200px;
+  padding-left: 20px;
+}
+
+.logo_footer {
+  width: 140px;
+}
