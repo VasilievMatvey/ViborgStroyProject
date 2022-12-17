@@ -25,17 +25,31 @@
 .icons {
   width: 37px;
 }
-
+.icons:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
 .vk {
   margin-bottom: 15px;
 }
 
+.nav-link:hover {
+  transform: scale(1.1);
+}
 .logo {
   width: 200px;
   padding-left: 20px;
 }
+.logo:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
 .logo_footer {
   width: 145px;
+}
+.logo_footer:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
 }
 @media (max-width: 420px) {
   .logo {
