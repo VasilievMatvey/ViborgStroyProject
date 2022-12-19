@@ -29,8 +29,8 @@ body {
 }
 
 .logo:hover {
-  transform: scale(1.1);
-  transition: all 0.5s ease;
+  transform: scale(1);
+  transition: all 1s ease;
 }
 
 @media (max-width: 992px) {
@@ -51,8 +51,8 @@ body {
   width: 37px;
 }
 .icons:hover {
-  transform: scale(1.1);
-  transition: all 0.5s ease;
+  transform: scale(1);
+  transition: all 1s ease;
 }
 .vk {
   margin-bottom: 15px;
@@ -62,8 +62,8 @@ body {
   width: 145px;
 }
 .logo_footer:hover {
-  transform: scale(1.1);
-  transition: all 0.5s ease;
+  transform: scale(1);
+  transition: all 1s ease;
 }
 
 @media (max-width: 420px) {

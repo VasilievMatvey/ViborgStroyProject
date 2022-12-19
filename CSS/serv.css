@@ -52,8 +52,8 @@ body {
   width: 37px;
 }
 .icons:hover {
-  transform: scale(1.1);
-  transition: all 0.5s ease;
+  transform: scale(1);
+  transition: all 1s ease;
 }
 .vk {
   margin-bottom: 15px;
@@ -64,15 +64,15 @@ body {
   padding-left: 20px;
 }
 .logo:hover {
-  transform: scale(1.1);
-  transition: all 0.5s ease;
+  transform: scale(1);
+  transition: all 1s ease;
 }
 .logo_footer {
   width: 140px;
 }
 .logo_footer:hover {
-  transform: scale(1.1);
-  transition: all 0.5s ease;
+  transform: scale(1);
+  transition: all 1s ease;
 }
 @media (max-width: 420px) {
   .logo {
