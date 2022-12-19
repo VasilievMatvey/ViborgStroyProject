@@ -6,10 +6,10 @@ body {
   box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
   border-radius: 10px;
   background: #a8e6cf;
+  --bs-navbar-color: rgba(0, 0, 0, 0.7);
 }
 .navbar-nav {
   font-size: 1.15rem;
-  color: #000;
 }
 .nav-link:hover {
   color: aliceblue;
