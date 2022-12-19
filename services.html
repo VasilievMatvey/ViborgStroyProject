@@ -13,17 +13,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="CSS/serv.css" />
     <title>ВСП</title>
@@ -31,11 +31,13 @@
   <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid p-3">
-        <a class="navbar-brand" href="index.html"
-          ><img src="img/logo.svg" alt="ВыборгСтройПроект" class="logo"
-        /></a>
-        <p>Вы на сайте: <br /><span class="time">00.00</span></p>
-        <audio class="audio" src="JS/Notif.mp3" style="display: none"></audio>
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.svg" alt="ВыборгСтройПроект" class="logo" />
+          </a>
+          <p>Вы на сайте: <br /><span class="time">00.00</span></p>
+          <audio class="audio" src="JS/Notif.mp3" style="display: none"></audio>
+        </div>
         <button
           class="navbar-toggler collapsed"
           type="button"
@@ -51,7 +53,7 @@
           class="collapse navbar-collapse justify-content-end"
           id="navbarSupportedContent"
         >
-          <ul class="navbar-nav mb-2 mb-lg-0 fs-5">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.html"
                 >Главная</a
@@ -61,7 +63,7 @@
               <a class="nav-link" href="aboutus.html">О нас</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="services.html">Наши услуги</a>
+              <a class="nav-link" href="services.html">Наши услуги</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="location.html">Где нас найти</a>
@@ -96,6 +98,31 @@
     <section>
       <div class="container">
         <div class="row">
+          <div class="col-lg-3 col-12 menu_list">
+            <p>На этой странице:</p>
+            <ul class="list-group list-group-flush">
+              <a
+                href="#first-elem"
+                class="list-group-item list-group-item-action"
+                >Кадастравые работы</a
+              >
+              <a
+                href="#second-elem"
+                class="list-group-item list-group-item-action"
+                >Межевание</a
+              >
+              <a
+                href="#thrid-elem"
+                class="list-group-item list-group-item-action"
+                >Строительно-техническая экспертиза</a
+              >
+              <a
+                href="#four-elem"
+                class="list-group-item list-group-item-action"
+                >Дизайн интерьеров в Выборге
+              </a>
+            </ul>
+          </div>
           <div class="col-12 col-lg-6">
             <h2>Наши услуги</h2>
             <p>
@@ -285,38 +312,15 @@
               в соответствии с ГОСТ и СНИП.
             </p>
           </div>
-          <div class="col-lg-3 col-12 menu_list">
-            <p>На этой странице:</p>
-            <ul class="list-group list-group-flush">
-              <a
-                href="#first-elem"
-                class="list-group-item list-group-item-action"
-                >Кадастравые работы</a
-              >
-              <a
-                href="#second-elem"
-                class="list-group-item list-group-item-action"
-                >Межевание</a
-              >
-              <a
-                href="#thrid-elem"
-                class="list-group-item list-group-item-action"
-                >Строительно-техническая экспертиза</a
-              >
-              <a
-                href="#four-elem"
-                class="list-group-item list-group-item-action"
-                >Дизайн интерьеров в Выборге
-              </a>
-            </ul>
-          </div>
         </div>
       </div>
     </section>
     <section class="footer">
-      <div class="container-fluid bg-light p-3">
+      <div class="container-fluid p-3">
         <div class="row">
-          <div class="col-6">
+          <div
+            class="col-12 col-sm-6 d-flex align-items-center justify-content-center"
+          >
             <ul class="list-unstyled">
               <li>
                 <a href="index.html"
@@ -327,7 +331,7 @@
             </ul>
           </div>
           <div
-            class="col-6 d-flex flex-column align-items-center justify-content-center"
+            class="col-12 col-sm-6 d-flex flex-column align-items-center justify-content-center"
           >
             <h4 style="margin-bottom: 25px">Наши Соцсети:</h4>
             <div class="footer-icons f_icons">
@@ -348,7 +352,7 @@
               <a href="#"
                 ><img src="img/vklogo.png" alt="vk" class="icons vk"
               /></a>
-              <a href="https://mail.google.com"
+              <a href="mailto:mateyvas04@gmail.com"
                 ><i class="fa fa-2x fa-envelope icons" aria-hidden="true"></i>
               </a>
             </div>

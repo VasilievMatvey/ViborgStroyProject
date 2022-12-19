@@ -31,11 +31,14 @@
   <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid p-3">
-        <a class="navbar-brand" href="index.html"
-          ><img src="img/logo.svg" alt="ВыборгСтройПроект" class="logo"
-        /></a>
-        <p>Вы на сайте: <br /><span class="time">00.00</span></p>
-        <audio class="audio" src="JS/Notif.mp3" style="display: none"></audio>
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/logo.svg" alt="ВыборгСтройПроект" class="logo" />
+          </a>
+          <p>Вы на сайте: <br /><span class="time">00.00</span></p>
+          <audio class="audio" src="JS/Notif.mp3" style="display: none"></audio>
+        </div>
+
         <button
           class="navbar-toggler collapsed"
           type="button"
@@ -51,7 +54,7 @@
           class="collapse navbar-collapse justify-content-end"
           id="navbarSupportedContent"
         >
-          <ul class="navbar-nav mb-2 mb-lg-0 fs-5">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.html"
                 >Главная</a
@@ -64,7 +67,7 @@
               <a class="nav-link" href="services.html">Наши услуги</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="location.html">Где нас найти</a>
+              <a class="nav-link" href="location.html">Где нас найти</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="feedback.html">Обратная связь</a>
@@ -151,9 +154,11 @@
       </div>
     </div>
     <section class="footer">
-      <div class="container-fluid bg-light p-3">
+      <div class="container-fluid p-3">
         <div class="row">
-          <div class="col-6">
+          <div
+            class="col-12 col-sm-6 d-flex align-items-center justify-content-center"
+          >
             <ul class="list-unstyled">
               <li>
                 <a href="index.html"
@@ -164,7 +169,7 @@
             </ul>
           </div>
           <div
-            class="col-6 d-flex flex-column align-items-center justify-content-center"
+            class="col-12 col-sm-6 d-flex flex-column align-items-center justify-content-center"
           >
             <h4 style="margin-bottom: 25px">Наши Соцсети:</h4>
             <div class="footer-icons f_icons">
@@ -185,7 +190,7 @@
               <a href="#"
                 ><img src="img/vklogo.png" alt="vk" class="icons vk"
               /></a>
-              <a href="https://mail.google.com"
+              <a href="mailto:mateyvas04@gmail.com"
                 ><i class="fa fa-2x fa-envelope icons" aria-hidden="true"></i>
               </a>
             </div>

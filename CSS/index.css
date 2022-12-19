@@ -1,9 +1,20 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 .navbar {
   box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
   border-radius: 10px;
-  background: #fbfca7;
+  background: #a8e6cf;
 }
-
+.navbar-nav {
+  font-size: 1.15rem;
+  color: #000;
+}
+.nav-link:hover {
+  color: aliceblue;
+  font-size: bold;
+}
 .dropdown-menu[data-bs-popper] {
   left: -141%;
 }
@@ -12,12 +23,26 @@
   max-width: 116px;
 }
 
+.logo {
+  width: 200px;
+  padding-left: 20px;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
 @media (max-width: 992px) {
   .carousel-item img {
     height: 50vh;
   }
 }
-
+/*footer*/
+.footer {
+  background-color: #dcedc1;
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
 .footer-icons a {
   color: black;
 }
@@ -33,17 +58,6 @@
   margin-bottom: 15px;
 }
 
-.nav-link:hover {
-  transform: scale(1.1);
-}
-.logo {
-  width: 200px;
-  padding-left: 20px;
-}
-.logo:hover {
-  transform: scale(1.1);
-  transition: all 0.5s ease;
-}
 .logo_footer {
   width: 145px;
 }
@@ -51,6 +65,7 @@
   transform: scale(1.1);
   transition: all 0.5s ease;
 }
+
 @media (max-width: 420px) {
   .logo {
     width: 148px;
