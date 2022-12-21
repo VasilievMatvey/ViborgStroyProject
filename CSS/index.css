@@ -38,6 +38,11 @@ body {
     height: 50vh;
   }
 }
+
+.carousel-caption {
+  border-radius: 16px;
+  background-color: rgba(237, 237, 237, 0.6);
+}
 /*footer*/
 .footer {
   background-color: #ccec98;
